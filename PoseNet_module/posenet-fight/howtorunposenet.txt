@@ -1,0 +1,2 @@
+To start posenet start run the flask server ie app.py 
+Next run http-server in the directory of posenet

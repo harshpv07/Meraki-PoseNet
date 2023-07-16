@@ -1,0 +1,30 @@
+$.ajax({
+        type: "POST",
+        url: "http://192.168.29.143:5001/push",
+        data: {"loc" : "Tambaram"},
+        dataType: "jsonp",
+        success: function (response) {
+            //console.log(botPart1 + response[1] + botPart3);
+            console.log("success");
+            //bot_Event_Handler(response['response'] , response['class'])
+            //flag = true;
+        },
+        error: function(){
+            console.log("failed");
+        },
+        complete: function(){
+            
+        }
+    }); 
+
+
+
+    {% comment %} var data = new FormData();
+    data.append('loc', 'egmore');
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://192.168.29.143:5001/push', true);
+    xhr.onload = function () {
+        // do something to response
+        console.log(this.responseText);
+    };
+    xhr.send(data); {% endcomment %}
